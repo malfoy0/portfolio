@@ -27,7 +27,6 @@ img{
 }
 
 body{
-    max-width: 100%;
     font-family: 'Roboto', sans-serif;
     font-family: 'Noto Serif JP', serif;
     background-image: url(../img/cloth_00145.jpg);
@@ -254,7 +253,7 @@ header li:hover,
 
 @media (max-width:960px){
     .visual-title{
-        font-size: 4rem;
+        font-size: rem;
     }
 }
 
