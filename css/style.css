@@ -1,0 +1,327 @@
+@charset "UTF-8";
+
+li{
+    list-style: none;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.wrapper{
+    max-width: 1020px;
+    margin: 0 auto;
+    padding: 3%;
+}
+
+.section-title{
+    font-size: 3rem;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Noto Serif JP', serif;
+    background-image: url(../img/cloth_00145.jpg);
+}
+
+.main{
+    margin-bottom: 50px;
+}
+
+.home-btn{
+    display: block;
+    margin-top:100px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.home-btn:hover{
+    opacity: 0.6;
+}
+
+@media (max-width:520px){
+    .section-title{
+        margin-bottom: 30px;
+    }
+}
+/* header
+---------------------------------------------------------*/
+header{
+    position: sticky;
+    top: 0;
+    padding: 20px 5%;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    font-size: 2rem;
+}
+
+header nav{
+    margin-left: auto;
+}
+
+header nav ul{
+    display: flex;
+    align-items: center;
+}
+
+header li{
+    margin-right: 20px;
+    opacity: 1;
+}
+
+header li:last-child{
+    margin-right: 0;
+}
+
+header li:hover,
+.logo:hover{
+    opacity: .6;
+}
+
+.twitter{
+    height: 30px;
+    border-radius: 50%;
+}
+
+/* main-visual
+--------------------------------------------------------------*/
+.main-visual{
+    height: calc(100vh - 300px);
+    padding: 200px 10% 0;
+    max-width: 100%;
+}
+
+.visual-title{
+    max-width: 100%;
+    text-align: center;
+    font-size: 8rem;
+	padding: 30px;
+	position: relative;
+    font-family: 'Baloo Bhaina', cursive;  /* 使うgoogle fontによって変更 */
+    font-weight: bold;
+    color: #fff;  
+    margin: 0px;
+    text-shadow: 3px 3px 0 #99bbe2, 6px 6px 0 #6798d2, 9px 9px 0 #2769b7;
+    -webkit-transform: skewY(-7deg);  /* 傾きを調整 */
+    -ms-transform: skewY(-7deg);
+    -moz-transform: skewY(-7deg);
+    -o-transform: skewY(-7deg);
+    transform: skewY(-7deg);border-bottom: 7px solid white;
+}
+
+.visual-title span{
+    color: #1DA1F2;
+}
+
+
+@media (max-width:520px){
+    .main-visual{
+        height: calc(100vh - 250px);
+    }
+    
+    .visual-title{
+        font-size: 3.5rem;
+        
+    }
+
+    .visual-title::after,
+    .visual-title::before{
+        display: none;
+    }
+}
+
+/* about
+------------------------------------------------------------*/
+.about-contents{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-img{
+    width: 35%;
+}
+
+.about-img img{
+    background-color: #f9fafa;
+    border-radius: 50%;
+}
+
+.about-text{
+    width: 60%;
+}
+
+.main-about dl{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.main-about dt{
+    font-weight: bold;
+    width: 30%;
+    padding-bottom: 20px;
+}
+
+.main-about dd{
+    padding-bottom: 20px;
+    width: 70%;
+}
+
+.main-about dd img{
+    height: 30px;
+}
+
+.about-text dd img:hover{
+    opacity: 0.6;
+}
+
+.about-mail{
+    margin-right: 20px;
+    border-radius: 0%;
+}
+
+@media (max-width:520px){
+    .about-contents{
+        flex-direction: column;
+    }
+
+    .about-img,
+    .about-text{
+        width: 100%;
+    }
+
+    .about-img{
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    .about-text dl{
+        padding-left: 20px;
+    }
+}
+/* skill
+---------------------------------------------------------*/
+.skill{
+    display: flex;
+    align-items: center;
+}
+
+.skill-img{
+    height: 200px;
+    width: 33%;
+    border-radius: 50%;
+}
+
+.skill-img img{
+    background-color: white;
+    border-radius: 30px;
+    
+}
+
+.skill-text{
+    padding: 0 3% 15px;
+    width: 60%;
+    line-height: 1.7;
+}
+
+.skills-title{
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    border-bottom: 1.5px solid black;
+}
+
+@media (max-width:520px){
+    .skill{
+        flex-direction: column;
+    }
+
+    .skill-img,
+    .skill-text{
+        width: 100%;
+    }
+
+    .skill-img{
+        display: block;
+        padding-bottom: 70px;
+        text-align: center;
+    }
+
+    .skill-img img{
+        height: 250px;
+    }
+}
+
+/* contact
+--------------------------------------------------------------------*/
+.main-contact p{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.button a {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    padding: 2% 5%;
+    width: 300px;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #fa4545;
+    box-shadow: 0 5px 0 #b63333;
+    transition: 0.3s;
+    border-radius: 10px;
+  }
+
+  .button a::before{
+    margin-right: 50px;
+    content: url(../img/メールの無料アイコンその8\ \(1\).png);
+  }
+  
+  .button a:hover {
+    transform: translateY(3px);
+    text-decoration: none;
+    box-shadow: 0 2px 0 #b63333;
+  }
+
+  .contact{
+    margin-top: 100px;
+  }
+  
+  /* footer
+  -------------------------------------------------------------------*/
+  footer{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    height: 70px;
+  }
+
+  footer p{
+    margin: 0 auto;
+    display: block;
+    font-size: 0.85rem;
+    color: white;
+  }
+
+
+
+
+
